@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="spotify-container">
+        <aside class="sidebar">
+            <div class="logo"><i class="fab fa-spotify"></i> Spotify</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> Your Library</a></li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <p>PLAYLISTS</p>
+                <a href="playlist.html?name=Lofi Beats" class="playlist-item">Lofi Beats</a>
+                <a href="playlist.html?name=Bollywood Tadka" class="playlist-item">Bollywood Tadka</a>
+                <a href="playlist.html?name=Top Hits - Bengaluru" class="playlist-item">Top Hits - Bengaluru</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="playlist-view">
+                <div class="playlist-header">
+                    <img src="https://picsum.photos/200" alt="Playlist Cover" class="playlist-cover">
+                    <div class="playlist-details">
+                        <span class="playlist-type">PLAYLIST</span>
+                        <h1 class="playlist-title">Loading...</h1>
+                        <p class="playlist-description"></p>
+                    </div>
+                </div>
+                <div class="song-list-header">
+                    <span>#</span>
+                    <span>Title</span>
+                    <span>Artist</span>
+                    <span><i class="far fa-clock"></i></span>
+                </div>
+                <div class="song-list">
+                </div>
+            </section>
+        </main>
+
+        <footer class="player-bar">
+            <div class="song-info">
+                <p class="song-title">Song Title</p>
+                <p class="song-artist">Artist Name</p>
+            </div>
+            <div class="player-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-play-circle play-button"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-repeat"></i>
+            </div>
+            <div class="playback-controls">
+                <i class="fas fa-volume-down"></i>
+                <div class="progress-bar"></div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

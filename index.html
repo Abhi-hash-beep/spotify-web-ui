@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="spotify-container">
+        <aside class="sidebar">
+            <div class="logo"><i class="fab fa-spotify"></i> Spotify</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="active"><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> Your Library</a></li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <p>PLAYLISTS</p>
+                <a href="playlist.html?name=Lofi Beats" class="playlist-item">Lofi Beats</a>
+                <a href="playlist.html?name=Bollywood Tadka" class="playlist-item">Bollywood Tadka</a>
+                <a href="playlist.html?name=Top Hits - Bengaluru" class="playlist-item">Top Hits - Bengaluru</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="What do you want to listen to?">
+                </div>
+            </header>
+            <section>
+                <h2>Browse all</h2>
+                <div class="browse-grid">
+                    <div class="genre-card" style="background-color: #E13300;">Music</div>
+                    <div class="genre-card" style="background-color: #1E3264;">Podcasts</div>
+                    <div class="genre-card" style="background-color: #8D67AB;">Made For You</div>
+                    <div class="genre-card" style="background-color: #B49BC8;">New Releases</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="player-bar">
+            <div class="song-info">
+                <p class="song-title">Song Title</p>
+                <p class="song-artist">Artist Name</p>
+            </div>
+            <div class="player-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-play-circle play-button"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-repeat"></i>
+            </div>
+            <div class="playback-controls">
+                <i class="fas fa-volume-down"></i>
+                <div class="progress-bar"></div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
