@@ -10,6 +10,7 @@ Of course.
 
 ### ## File Structure
 spotify-clone/
+
 ├── 📄 index.html
 ├── 📄 search.html
 ├── 📄 playlist.html
